@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3实现的页面平滑过渡</title>
+    <!--很多低版本的IE不支持css3新增的属性，所以需要告诉IE浏览器使用最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrom=1">
+    <!--宽度自适应设备宽度，不允许缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--从其他网站上引入字体-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="application/javascript" src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="st-container">
+            <!--nav begin-->
+            <input type="radio" name="radio-set" checked="checked" id="st-control-1" class="st-control">
+            <a href="#st-panel-1">Serendipiy</a>
+            <input type="radio" name="radio-set" id="st-control-2" class="st-control">
+            <a href="#st-panel-2">Happiness</a>
+            <input type="radio" name="radio-set" id="st-control-3" class="st-control">
+            <a href="#st-panel-3">Tranquillity</a>
+            <input type="radio" name="radio-set" id="st-control-4" class="st-control">
+            <a href="#st-panel-4">Positivity</a>
+            <input type="radio" name="radio-set" id="st-control-5" class="st-control">
+            <a href="#st-panel-5">Passion</a>
+            <!--nav end-->
+            <!--content begin-->
+            <div class="st-scroll">
+
+                <section class="st-panel" id="st-panel-1">
+                    <div class="st-desc" data-icon="H"></div>
+                    <h2>Serendipiy</h2>
+                    <p>Serendipiy,Serendipiy</p>
+                </section>
+
+                <section class="st-panel st-color" id="st-panel-2">
+                    <div class="st-desc" data-icon="2"></div>
+                    <h2>Happiness</h2>
+                    <p>Happiness,Happiness</p>
+                </section>
+
+                <section class="st-panel" id="st-panel-3">
+                    <div class="st-desc" data-icon="B"></div>
+                    <h2>Tranquillity</h2>
+                    <p>Tranquillity,Tranquillity</p>
+                </section>
+
+                <section class="st-panel st-color" id="st-panel-4">
+                    <div class="st-desc" data-icon="x"></div>
+                    <h2>Positivity</h2>
+                    <p>Positivity,Positivity</p>
+                </section>
+
+                <section class="st-panel" id="st-panel-5">
+                    <div class="st-desc" data-icon="C"></div>
+                    <h2>Passion</h2>
+                    <p>Passion,Passion</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
